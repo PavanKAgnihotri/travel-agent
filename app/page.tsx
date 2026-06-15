@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function DMCTravelRedesign() {
   return (
     <div
@@ -133,11 +135,7 @@ export default function DMCTravelRedesign() {
         </div>
         <div className="services-panel">
           <div className="services-grid">
-            <article
-              className="service-card"
-              data-type="partnership"
-              onClick={() => (window.location.href = "#contact")}
-            >
+            <Link href="/b2b" className="service-card" data-type="partnership">
               <div className="service-card-content">
                 <span className="service-label">B2B Travel Partnerships</span>
                 <h3 className="service-title">
@@ -160,13 +158,9 @@ export default function DMCTravelRedesign() {
                   </span>
                 </div>
               </div>
-            </article>
+            </Link>
 
-            <article
-              className="service-card"
-              data-type="fam"
-              onClick={() => (window.location.href = "#contact")}
-            >
+            <Link href="/fam" className="service-card" data-type="fam">
               <div className="service-card-content">
                 <span className="service-label">Familiarization Trips</span>
                 <h3 className="service-title">Curated FAM experiences</h3>
@@ -187,12 +181,12 @@ export default function DMCTravelRedesign() {
                   </span>
                 </div>
               </div>
-            </article>
+            </Link>
 
-            <article
+            <Link
+              href="/representation"
               className="service-card"
               data-type="representation"
-              onClick={() => (window.location.href = "#contact")}
             >
               <div className="service-card-content">
                 <span className="service-label">Representation</span>
@@ -200,21 +194,21 @@ export default function DMCTravelRedesign() {
                 <p className="service-copy">
                   Act as your on-the-ground partner for client bidding, local
                   coordination and event presence so your business stays
-                  connected and competitive in every destination.
+                  connected and competitive across the Americas.
                 </p>
                 <div className="service-pill-list">
                   <span className="service-pill">
-                    Bidding and business coordination
+                    Bidding and client coordination
                   </span>
                   <span className="service-pill">
                     Local market relationship support
                   </span>
                   <span className="service-pill">
-                    Event presence on your behalf
+                    Attend travel shows on your behalf
                   </span>
                 </div>
               </div>
-            </article>
+            </Link>
           </div>
         </div>
       </section>
